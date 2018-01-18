@@ -3,17 +3,13 @@ h1 {
     font-family: verdana;
     font-size: 180%;
 }
-p.first {
-	color: orange;
-}
 div.jumbotron {
 	background-color: lightpink;
-
 }
 ul{
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	overflow: hidden;
 	background-color: #f3f3f3;
 }
@@ -24,9 +20,19 @@ li a{
 	display: block;
 	color: #666;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 16px;
 	text-decoration: none;
 }
 li a:hover{
 	background-color: lightgrey;
+}
+div.aboutimg {
+	text-align:center;
+}
+h3{
+	text-align:center;
+}
+p{
+	padding-right: 50px;
+	padding-left: 50px;
 }

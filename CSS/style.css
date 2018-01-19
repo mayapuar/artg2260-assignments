@@ -1,7 +1,7 @@
 h1 {
     color: blue;
-    font-family: verdana;
-    font-size: 180%;
+    font-family: palatino;
+    font-size: 200%;
 }
 div.jumbotron {
 	background-color: lightpink;
@@ -25,12 +25,6 @@ li a{
 }
 li a:hover{
 	background-color: lightgrey;
-}
-div.aboutimg {
-	text-align:center;
-}
-h3{
-	text-align:center;
 }
 p{
 	padding-right: 50px;

@@ -3,8 +3,8 @@ var colr = 0;
 var colb = 0;
 var colg = 0;
 
-function setup (){
-	var c = createCanvas(500,500);
+function setup() {
+	var c = createCanvas(500, 500);
 	//background
 	background(random(255), random(255), random(255), random (255));
 	//saveCanvas(c, 'myCanvas', 'jpg');
@@ -45,9 +45,13 @@ function keyPressed () {
 		colg = 0;
 		colb = 0;
 	} else if (keyCode == UP_ARROW) {
-		diameter ++;
+		diameter *=2;
 	} else if (keyCode == DOWN_ARROW) {
 		diameter/=2;
+	} else if (keyCode == BACKSPACE) {
+		setup ();
+	} else if (key == 's' || key == 'S') {
+		saveCanvas ('myCanvas', 'jpg');
 	}
 }
 

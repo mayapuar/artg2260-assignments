@@ -21,12 +21,37 @@
 		<div class= "jumbotron text-center">
 		<h1>Programming Basics</h1> 
 	</div>
-	<div>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="About.html">About</a></li>
-		</ul>
-	</div>
+	<!-- Nav Bar -->
+	<div class="navbar">>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="About.html">About</a></li>
+		<div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Assignments
+				<i class="fa fa-caret-down"></i>
+			</button>
+				<div class="dropdown-content" id="myDropdown">
+					<li><a href="Assignment 1.0/index.html">Assignment 1</a></li>
+					<li><a href="Assignment_1_1">Assignment 1.1</a></li>
+					<a href="Assignment_2_0">Assignment 2</a>
+				</div>
+			</div>
+		<li><a href="Exercises.html">Exercises</a></li>
+		</div>
+		<script type="text/javascript">
+			//dropdown shows up when clicked on
+			function myFunction () {
+				document.getElementById ("myDropdown").classList.toggle ("show");
+			}
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')){
+					var myDropdown = document.getElementById("myDropdown");
+					if (myDropdown.classList.contains('show')) {
+						(myDropdown.classList.remove('show'));
+					}
+				}
+			}
+		</script>
+<!--body of page -->
 	<div>
 			<h3>About Me</h3>
 	</div>
